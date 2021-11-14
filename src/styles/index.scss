@@ -1,13 +1,226 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    background: rgb(73,52,143);
+    background: linear-gradient(180deg, rgba(73,52,143,1) 0%, rgba(25,20,20,1) 80%); 
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+}
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainContainer{
+    margin: 50px 0;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width:70%;
+    border-radius: 35px;
+    box-shadow: 0 0 1rem 0 rgba(255,255,255, 0.2);
+    background-color: rgba(25, 20, 20, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.spotify_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+    margin-top: 15px;
+    width: 100%;
+    // border: solid black 2px;
+    color: white;
+    border-bottom: 0.1px solid grey;
+}
+.spotify_header_FirstBOX{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.spotify_header_SecondBOX{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-right: 25px;
+}
+.dropdownMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 185, 84);
+    padding: 0 15px 0 0;
+    border-radius: 40px;
+}
+.selfie{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+.dropdownMain_icon{
+    margin-right: 10px;
+}
+
+h1{
+    margin-left: 10px;
+}
+
+.spotify_content{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid grey;
+    padding: 10px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding: 10px;
+}
+li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // border: solid black 2px;
+    padding: 2px;
+}
+.nameBOX{
+    width: 20%;
+    align-items: center;
+    color:white;
+}
+.nameBOX:hover{
+    font-weight: bold;
+    color: rgb(30, 215, 96)
+}
+
+.categoryBOX{   
+    width: 20%;
+    align-items: center;
+    color:grey;
+}
+
+
+.buttonsBOX{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 9%;
+    margin-right: 20px;
+    align-items: center;  
+}
+.unclicked{
+    color: grey;
+}
+.clicked{
+    color: rgb(30, 215, 96);
+}
+
+.beautyInput {
+    border-radius: 40px;
+    margin: 10px;
+    padding: 6.5px 25px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+.beautyInput::placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+color: grey;
+opacity: 1; /* Firefox */
+}
+.beautyInput::-webkit-outer-spin-button,
+.beautyInput::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.beautyInput:hover {
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+.spotify_footer{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+.button_forward{
+    background-color: 	rgb(29, 185, 84);
+    color: white;
+    border: 0;
+    margin: 0 15px;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+}
+.button_forward:hover{
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+}
+.button_backward{
+    background-color: 	rgb(29, 185, 84);
+    color: white; 
+    position: relative;
+    border: 0;
+    margin: 0 15px;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+}
+.button_backward:hover{
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+}
+.button_random{
+    background-color: 	rgb(29, 185, 84);
+    color: white; 
+    border: 0;
+    margin: 0 15px;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+}
+.button_random:hover{
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+}
+.spotify_footer_song{
+    color: white;
+    font-size: 20px;
+}
+.spotify_footer_player{
+    background-color: 	transparent;
+    color: rgb(29, 185, 84); 
+    border: 0;
+    margin: 15px;
+}
